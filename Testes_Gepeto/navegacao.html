@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página com Múltiplos Menus de Navegação</title>
+  <style>
+    /* Resetando margens e preenchimento padrão */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    /* Estilos do Menu Principal */
+    header {
+      background-color: #4CAF50;
+      padding: 15px;
+      text-align: center;
+    }
+
+    header nav ul {
+      list-style-type: none;
+    }
+
+    header nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    header nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    /* Estilos do Menu Lateral */
+    aside {
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      color: white;
+      height: 100%;
+      padding-top: 20px;
+    }
+
+    aside nav ul {
+      list-style-type: none;
+      padding-left: 20px;
+    }
+
+    aside nav ul li {
+      margin-bottom: 15px;
+    }
+
+    aside nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    aside nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    /* Estilos de Conteúdo */
+    main {
+      margin-left: 270px; /* Espaço para o menu lateral */
+      padding: 20px;
+    }
+
+    h1, p {
+      margin-bottom: 20px;
+    }
+
+    /* Estilos do Menu do Rodapé */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer nav ul {
+      list-style-type: none;
+    }
+
+    footer nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    footer nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    footer nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      aside {
+        width: 100%;
+        height: auto;
+        position: static;
+        padding-left: 0;
+      }
+
+      main {
+        margin-left: 0;
+      }
+
+      footer nav ul li {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho com Navegação Principal -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Navegação Lateral -->
+  <aside>
+    <nav>
+      <ul>
+        <li><a href="#home">Página Inicial</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#testemunhos">Testemunhos</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Conteúdo Principal -->
+  <main>
+    <section id="home">
+      <h1>Bem-vindo ao Nosso Site!</h1>
+      <p>Explorar o conteúdo, aprender mais sobre nossos serviços e entrar em contato com nossa equipe.</p>
+    </section>
+
+    <section id="sobre">
+      <h1>Sobre Nós</h1>
+      <p>Somos uma empresa dedicada a fornecer as melhores soluções para os nossos clientes, com foco na inovação e qualidade.</p>
+    </section>
+
+    <section id="servicos">
+      <h1>Serviços</h1>
+      <p>Oferecemos uma variedade de serviços, incluindo desenvolvimento web, design gráfico e consultoria de marketing digital.</p>
+    </section>
+
+    <section id="contato">
+      <h1>Contato</h1>
+      <p>Entre em contato conosco através do nosso formulário ou ligue para nossa central de atendimento.</p>
+    </section>
+  </main>
+
+  <!-- Rodapé com Navegação Secundária -->
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Termos de Uso</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Suporte</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

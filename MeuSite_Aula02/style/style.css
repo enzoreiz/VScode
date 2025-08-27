@@ -1,0 +1,145 @@
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 40px;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #444;
+
+  padding-left: 10px;
+}
+
+h6{
+    margin: 20px;
+    color: #444;
+}
+
+li, dt, dd {
+  margin: 8px 0;
+}
+
+dt {   
+    margin: 8px;
+    font-weight: bold;
+    color: #444;
+}
+dd {
+    margin-left: 30px;
+    color: #555;
+    font-style: italic;
+}
+
+.caixa{
+    background-color: white;
+    color: rgb(44, 44, 44);
+    font-size: 22px;
+    margin: 30px auto;
+    width: 50%;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.texto-verde {
+    color: green;
+    font-weight: bold;
+}
+
+.texto-azul {
+    color: blue;
+    font-style: italic;
+}
+
+#texto-unico {
+    color: red;
+    background-color: #ffe0e0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+hr{
+    border-radius: 5px;
+    height: 1px;
+    width: 60%;
+    background-color: #777;
+}
+
+a {
+  color: blue;
+  text-decoration: none; 
+  font-weight: bold;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline; 
+}
+
+.caixa img:hover {
+    transform: scale(1.05); 
+}
+
+.caixa img {
+    max-width: 300px;   
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#p1 {
+    background-color: #ffcccc; 
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#p2 {
+    background-color: #ccffcc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#p3 {
+    background-color: #cce5ff; 
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.destaque {
+  color: red;
+  font-weight: bold;
+}
+.numero {
+  color: crimson;
+  font-weight: bold;
+}
+.enfase {
+  color: green;
+  font-weight: bold;
+}
+
+.etapa {
+  padding: 10px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.etapa1 { background-color: #ffe066; }  
+.etapa2 { background-color: #a8e6a3; }  
+.etapa3 { background-color: #b0bec5; }
+
+ol {
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 10px 0;  
+  list-style-position: inside;
+}

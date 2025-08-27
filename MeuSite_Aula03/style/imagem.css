@@ -1,0 +1,9 @@
+body{
+    background-image: url('../images/Spotify.png');
+    background-repeat:no-repeat;
+    background-position: center center;
+    margin: 0;
+    height: 100vh;
+    background-color: #111;
+    /*um nao repete a imagem, um é altura de repetição e outro a base */
+}

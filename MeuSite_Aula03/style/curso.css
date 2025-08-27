@@ -1,0 +1,41 @@
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: whitesmoke;
+  color: #333;
+      margin: 40px;
+
+}
+table{
+  border: solid black 2px; /* Borda da tabela */
+  background-color:ghostwhite;
+  width:80% ;
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+td{
+  border: solid black 1px;
+  padding: 10px;
+}
+.curso{
+    font-weight: bold;
+    background-color: chartreuse;
+}
+.amarelo{
+    background-color:gold;
+    color: black;
+}
+.rosa{
+    background-color:palevioletred;
+    color: black;
+}
+.info{
+    font-weight: bold;
+    background-color: salmon;
+    color: white;
+}
+.categoria{
+    background-color: deepskyblue;
+    color: black;
+    font-weight: bold;
+}

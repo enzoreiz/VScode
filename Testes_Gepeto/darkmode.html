@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respostas</title>
+    <style>
+        /* Tema claro (padrão) */
+body {
+    background-color: #f4f4f4;
+    color: #222;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Perguntas coloridas */
+#q1 { background-color: #ffcccc; padding: 10px; border-radius: 8px; }
+#q2 { background-color: #ccffcc; padding: 10px; border-radius: 8px; }
+#q3 { background-color: #cce5ff; padding: 10px; border-radius: 8px; }
+
+/* Botão */
+#toggleDark {
+    margin-bottom: 15px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Tema escuro */
+.dark-mode {
+    background-color: #121212;
+    color: #eee;
+}
+
+.dark-mode #q1 { background-color: #662222; }
+.dark-mode #q2 { background-color: #225522; }
+.dark-mode #q3 { background-color: #223355; }
+
+    </style>
+</head>
+<body>
+    <button id="toggleDark">🌙 Dark Mode</button>
+
+    <h1>Respostas</h1>
+
+    <dl>
+        <dt id="q1">Qual é a diferença entre link interno e externo?</dt>
+        <dd>Link interno leva o usuário para outra página dentro do mesmo site.  
+            Link externo leva para um site diferente.</dd>
+
+        <dt id="q2">Qual é a diferença entre <code>a</code>, <code>a:active</code>, <code>a:visited</code>, e <code>a:hover</code>?</dt>
+        <dd>
+            <ul>
+                <li><b>a</b>: estilo padrão do link.</li>
+                <li><b>a:hover</b>: quando o mouse passa por cima.</li>
+                <li><b>a:active</b>: quando o link é clicado.</li>
+                <li><b>a:visited</b>: quando o link já foi visitado.</li>
+            </ul>
+        </dd>
+
+        <dt id="q3">Qual é a diferença entre criar listas com UL e OL?</dt>
+        <dd>
+            <ul>
+                <li><b>UL</b>: lista não ordenada (com bolinhas ou símbolos).</li>
+                <li><b>OL</b>: lista ordenada (com números ou letras).</li>
+            </ul>
+        </dd>
+    </dl>
+
+<script>
+    document.getElementById("toggleDark").addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+});
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,85 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    /* Menu */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #222;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+      transform: scale(1.1);
+    }
+
+    /* Sessões */
+    section {
+      padding: 80px 20px;
+      min-height: 100vh;
+    }
+
+    #inicio {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    #inicio h1 {
+      font-size: 2.5rem;
+    }
+
+    #sobre, #projetos, #contato {
+      background: white;
+      margin: 20px auto;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+      max-width: 900px;
+    }
+
+    .projeto {
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .projeto:hover {
+      transform: scale(1.02);
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Caderno Digital</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* ===== MENU FIXO ===== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #222;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff9800;
+    }
+
+    /* ===== SEÇÕES ===== */
+    section {
+      padding: 80px 20px; /* 80px pq o menu ocupa espaço */
+      min-height: 100vh;
+    }
+
+    #html {
+      background: #f0f0f0;
+    }
+
+    #css {
+      background: #e3f2fd;
+    }
+
+    #javascript {
+      background: #fff3e0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MENU -->
+  <nav>
+    <a href="#html">HTML</a>
+    <a href="#css">CSS</a>
+    <a href="#javascript">JavaScript</a>
+  </nav>
+
+  <!-- SEÇÕES -->
+  <section id="html">
+    <h1>HTML</h1>
+    <p>HTML é a linguagem de marcação usada para estruturar o conteúdo da web...</p>
+  </section>
+
+  <section id="css">
+    <h1>CSS</h1>
+    <p>CSS é usado para estilizar o conteúdo, controlando cores, fontes, espaçamento...</p>
+  </section>
+
+  <section id="javascript">
+    <h1>JavaScript</h1>
+    <p>JavaScript é a linguagem que traz interatividade e lógica para as páginas web...</p>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Renda Fixa</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                background-color: whitesmoke;
+            }
+
+            a, a:active, a:visited {
+                color: white;
+                text-decoration: none;
+            }
+
+            img {
+                width: 200px;
+                height: auto;
+            }
+
+            #menu {
+                background-color:red;
+                width: 100%;
+                height: 50px;
+                color: white;
+                font-weight: bold;
+                font-size: 30px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                transition: all 0.3s ease-in-out;
+            }
+
+            #menu a {
+                color: white;
+                text-decoration: none;
+                padding: 8px 12px;
+                border-radius: 8px;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+
+            #menu a:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+                transform: scale(1.05);
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            }
+
+            #titulo {
+                text-align: center;
+                font-weight: bold;
+                font-size: 45px;
+            }
+
+            #subtitulo {
+                text-align: center;
+                color: rgb(44, 44, 44);
+                font-size: 20px;
+            }
+
+            .caixa {
+                background-color: white;
+                color: rgb(44, 44, 44);
+                font-size: 22px;
+                margin: 30px auto;
+                width: 50%;
+                border-radius: 15px;
+                padding: 20px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            }
+
+            .divisao {
+                border: none;
+                height: 2px;
+                background-color: rgba(0, 0, 0, 0.2);
+                margin: 30px auto;
+                width: 70%;
+            }
+
+            .rodape {
+                background-color: red;
+                color: white;
+                text-align: center;
+                padding: 25px;
+                font-size: 20px;
+                border-top: 2px solid rgba(255, 255, 255, 0.1);
+                margin-top: 40px;
+                box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="menu">
+            <a href="#">Bloco de notas</a>
+        </div>
+
+        <h1 id="titulo">Resumos e afins.</h1>
+        <p id="subtitulo">Irei utilizar este espaço para anotações e explicações de conteúdo. </p>
+
+        <hr class="divisao">
+
+        <div class="caixa">
+            <p><strong>HTML: </strong>É a linguagem usada para estruturar páginas na web. Ele organiza o conteúdo através de elementos chamados “tags”, que definem coisas como títulos, parágrafos, links e imagens. Pode ser visto como o esqueleto do site, já que é a base onde tudo é construído.</p>
+           </div>
+
+        <div class="caixa"> 
+            <p><strong>CSS: </strong>É a linguagem responsável pela aparência das páginas. Ele controla cores, tamanhos, fontes, espaçamentos e até animações. Enquanto o HTML monta a estrutura, o CSS dá estilo e deixa o site visualmente agradável.</p>
+        </div>
+
+        <footer class="rodape">
+            <p>&copy; 2025 - Escreva com responsabilidade | Feito por Enzo Martins dos Reis </p>
+        </footer>
+    </body>
+    </html>

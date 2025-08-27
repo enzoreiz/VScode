@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Estoque + Hover + Tema</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 50px;
+        }
+
+        .tema-escuro {
+            background-color: #111;
+            color: #eee;
+        }
+
+        table {
+            width: 900px;
+            border: solid #111 1px;
+            margin: auto;
+            background-color: white;
+            border-collapse: collapse;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        th, td {
+            border: solid #333 1px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        thead th {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            font-size: 20px;
+        }
+
+        tfoot td {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: hotpink;
+            font-weight: bold;
+            color: #111;
+            cursor: pointer;
+            transition: 0.3s;
+            transform: scale(1.02);
+        }
+
+        button {
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: #0072ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0055cc;
+        }
+
+        .tema-escuro table {
+            background-color: #222;
+            color: #ddd;
+        }
+
+        .tema-escuro thead th {
+            background: linear-gradient(to right, #434343, #000000);
+        }
+
+        .tema-escuro tfoot td {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="alternarTema()">🌙 Alternar Tema</button>
+    <table>
+        <!-- Cabeçalho -->
+        <thead>
+            <tr>
+                <th colspan="4" id="titulo">📦 Estoque de Produtos</th>
+            </tr>
+            <tr>
+                <th>ID</th>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Marca</th>
+            </tr>
+        </thead>
+
+        <!-- Corpo -->
+        <tbody>
+            <tr><td>1</td><td>Televisão</td><td>R$ 7.800,00</td><td>LG</td></tr>
+            <tr><td>2</td><td>Celular</td><td>R$ 10.500,00</td><td>Apple</td></tr>
+            <tr><td>3</td><td>Notebook</td><td>R$ 4.200,00</td><td>Dell</td></tr>
+            <tr><td>4</td><td>Tablet</td><td>R$ 2.100,00</td><td>Samsung</td></tr>
+            <tr><td>5</td><td>Fone de Ouvido</td><td>R$ 650,00</td><td>Sony</td></tr>
+            <tr><td>6</td><td>Monitor Gamer</td><td>R$ 2.800,00</td><td>AOC</td></tr>
+            <tr><td>7</td><td>Mouse</td><td>R$ 350,00</td><td>Logitech</td></tr>
+            <tr><td>8</td><td>Teclado Mecânico</td><td>R$ 500,00</td><td>Redragon</td></tr>
+            <tr><td>9</td><td>Cadeira Gamer</td><td>R$ 1.200,00</td><td>ThunderX3</td></tr>
+            <tr><td>10</td><td>PlayStation 5</td><td>R$ 4.500,00</td><td>Sony</td></tr>
+            <tr><td>11</td><td>Xbox Series X</td><td>R$ 4.300,00</td><td>Microsoft</td></tr>
+            <tr><td>12</td><td>Caixa de Som Bluetooth</td><td>R$ 400,00</td><td>JBL</td></tr>
+            <tr><td>13</td><td>Relógio Smartwatch</td><td>R$ 900,00</td><td>Xiaomi</td></tr>
+            <tr><td>14</td><td>HD Externo 2TB</td><td>R$ 600,00</td><td>Seagate</td></tr>
+            <tr><td>15</td><td>Placa de Vídeo RTX 4070</td><td>R$ 3.800,00</td><td>NVIDIA</td></tr>
+        </tbody>
+
+        <!-- Rodapé -->
+        <tfoot>
+            <tr>
+                <td colspan="4">Lista completa de produtos cadastrados ✅</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+        function alternarTema() {
+            document.body.classList.toggle("tema-escuro");
+        }
+    </script>
+</body>
+</html>
