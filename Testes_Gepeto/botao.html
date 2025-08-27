@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Botão Centralizado com Animação</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #800000; /* vermelho escuro */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .botao-animado {
+      background-color: #4b0000;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 12px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      animation: pulse 1.5s infinite;
+      transition: transform 0.3s ease;
+    }
+
+    .botao-animado:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+      }
+      70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+      }
+    }
+
+    a{
+        text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <a class="botao-animado" href="https://google.com">Clique aqui.</a>
+</body>
+</html>
